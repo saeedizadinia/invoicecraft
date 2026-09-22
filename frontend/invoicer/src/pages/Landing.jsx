@@ -53,7 +53,7 @@ function Nav() {
       <div className="max-w-[1400px] mx-auto px-5 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2.5">
           <AILogo />
-          <span className="font-display font-semibold text-lg">Invoicer</span>
+          <span className="font-display font-semibold text-lg">Invoicecraft</span>
         </div>
         <div className="flex items-center gap-2">
           <Link to="/login" className="h-10 px-4 rounded-full text-sm font-semibold hover:bg-black/[0.04] flex items-center transition-colors">
@@ -508,9 +508,9 @@ function Footer() {
       <div className="max-w-[1400px] mx-auto px-5 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2.5">
           <AILogo />
-          <span className="font-display font-semibold">Invoicer</span>
+          <span className="font-display font-semibold">Invoicecraft</span>
         </div>
-        <span className="text-sm text-[#5a6f6a]">© {new Date().getFullYear()} Invoicer · Built with Neon + Gemini</span>
+        <span className="text-sm text-[#5a6f6a]">© {new Date().getFullYear()} Invoicecraft · Built with Neon + Gemini</span>
         <div className="flex items-center gap-3">
           <Link to="/login" className="text-sm font-semibold text-[#0f766e] hover:underline">Sign in</Link>
           <Link to="/register" className="text-sm font-semibold text-[#0f766e] hover:underline">Get started</Link>

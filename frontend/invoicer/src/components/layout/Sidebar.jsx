@@ -122,7 +122,7 @@ export function Sidebar() {
               "group-hover/sidebar:opacity-100 group-hover/sidebar:translate-x-0 group-hover/sidebar:delay-100",
             )}
           >
-            Invoicer
+            Invoicecraft
           </span>
         </div>
 

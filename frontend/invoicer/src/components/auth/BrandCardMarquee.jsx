@@ -130,7 +130,7 @@ function Footer({ subtitle }) {
   return (
     <div className="mt-4 pt-3 border-t border-gray-100 flex items-center gap-2">
       <span className="h-4 w-4 rounded-md" style={{ background: `linear-gradient(135deg,${TEAL},${TEAL_DARK})` }} />
-      <span className="text-[11px] font-medium text-gray-700">{subtitle || "Invoicer"}</span>
+      <span className="text-[11px] font-medium text-gray-700">{subtitle || "Invoicecraft"}</span>
     </div>
   );
 }

@@ -4,7 +4,7 @@ const path = require("path")
 dotenv.config({ path: path.resolve(__dirname, "../../.env") })
 
 const required = ["DATABASE_URL", "JWT_SECRET"]
-const missing = required.filter((key) => !process.env(key))
+const missing = required.filter((key) => !process.env[key])
 if (missing.length) {
     console.error(`Missing required env vars: ${missing.join(", ")}`)
     process.exit(1)
