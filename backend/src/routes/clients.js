@@ -113,15 +113,10 @@ router.patch(
     validate(clientSchema.partial()),
     asyncHandler(async (req, res) => {
         const fields = ["name", "email", "company", "phone", "address", "notes"]
-        const sets = []
-        const values = [req.params.id, req.user.id]
-        for (const f of fields) {
-            if (req.body[f] !== undefined) {
-                values.push(req.body[f])
-                sets.push(`${f} = $${values.length}`)
-            }
-        }
-        if (!sets.length) throw ApiError.badRequest("No fields to update")
+        const {setsAndValues} = require("../utils/update")
+        const sv = setsAndValues(req, fields)
+        const sets = sv[1]
+        const values = sv[2]
 
         const client = await queryOne(
             `UPDATE clients
