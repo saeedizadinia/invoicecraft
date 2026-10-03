@@ -6,10 +6,6 @@ const ApiError = require("../utils/ApiError");
 const {requireAuth} = require("../middleware/auth");
 const {validate} = require("../middleware/validate");
 const {query, queryOne, withTransaction} = require("../config/db");
-const {route} = require("express/lib/application");
-const {setsAndValues} = require("../utils/update");
-const req = require("express/lib/request");
-const client = require("../config/db");
 
 const router = express.Router();
 router.use(requireAuth);
