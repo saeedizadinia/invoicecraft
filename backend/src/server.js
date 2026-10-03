@@ -16,6 +16,8 @@ const dashboardRouter = require("./routes/dashboard");
 const reportsRouter = require("./routes/reports");
 const settingsRouter = require("./routes/settings");
 const itemsRouter = require("./routes/items");
+const expensesRouter = require("./routes/expenses");
+const paymentsRouter = require("./routes/payments");
 
 const app = express();
 
@@ -39,6 +41,8 @@ app.use("/api/dashboard", dashboardRouter);
 app.use("/api/reports", reportsRouter);
 app.use("/api/settings", settingsRouter);
 app.use("/api/items", itemsRouter);
+app.use("/api/expenses", expensesRouter);
+app.use("/api/payments", paymentsRouter);
 
 app.use(notFound);
 app.use(errorHandler);
