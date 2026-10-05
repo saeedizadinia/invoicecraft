@@ -18,6 +18,7 @@ const settingsRouter = require("./routes/settings");
 const itemsRouter = require("./routes/items");
 const expensesRouter = require("./routes/expenses");
 const paymentsRouter = require("./routes/payments");
+const aiRouter = require("./routes/ai");
 
 const app = express();
 
@@ -43,6 +44,7 @@ app.use("/api/settings", settingsRouter);
 app.use("/api/items", itemsRouter);
 app.use("/api/expenses", expensesRouter);
 app.use("/api/payments", paymentsRouter);
+app.use("/api/ai", aiRouter);
 
 app.use(notFound);
 app.use(errorHandler);
