@@ -11,7 +11,7 @@ import {
 import AILogo from "@/components/layout/AILogo";
 import { useAuth } from "@/context/AuthContext";
 
-const DEMO = { email: "alex@timetoprogram.com", password: "Test@1234" };
+const DEMO = { email: "izadinia.saieed@gmail.com", password: "Test@1234" };
 
 export default function Login() {
   const { login } = useAuth();
